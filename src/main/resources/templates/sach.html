@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sach</title>
+</head>
+<body>
+<strong th:href="@{/sach/new}">New</strong>
+<br>
+<th:block th:each ="sach : ${listSachs}">
+ <tr>
+     <td>[[${sach.id}]]</td>
+     <td>[[${sach.ten}]]</td>
+     <td>[[${sach.chuyenmuc}]]</td>
+     <td>[[${sach.tacgia}]]</td>
+     <br>
+ </tr>
+</th:block>
+</body>
+</html>
