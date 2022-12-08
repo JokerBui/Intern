@@ -1,7 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.Sach.Sach;
-import com.example.demo.Sach.SachRepository;
+import com.example.demo.Repository.SachRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
@@ -49,6 +49,6 @@ public class SachRepositoryTests {
     public void TestDelete(){
         Integer Id = 2 ;
         repo.deleteById(Id);
-    }
+}
 
 }
