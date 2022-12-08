@@ -15,6 +15,7 @@ public class SachService {
     public Sach save(Sach sach){
 
         Sach newBook = repo.save(sach);
+        String s = " 222";
         return newBook;
     }
     public Sach update(Integer id, Sach sach){
