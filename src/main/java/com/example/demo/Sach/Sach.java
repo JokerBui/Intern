@@ -7,12 +7,13 @@ import jakarta.persistence.*;
 public class Sach {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
-    @Column(nullable = false)
+    @Column(nullable = false, name = "ten")
     private String ten;
-    @Column(nullable = true)
+    @Column(nullable = true, name = "chuyenmuc")
     private String chuyenmuc;
-    @Column(nullable = true)
+    @Column(nullable = true, name = "tacgia")
     private String tacgia;
 
 

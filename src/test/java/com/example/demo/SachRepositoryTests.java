@@ -31,24 +31,24 @@ public class SachRepositoryTests {
             System.out.println(sach);
         }
     }
-    @Test
-    public void TestUpdate(){
-        Integer Id = 1 ;
-        Optional<Sach> optionalSach = repo.findById(Id);
-        Sach sach = optionalSach.get();
-        sach.setTacgia("ABC");
-        repo.save(sach);
-    }
-    @Test
-    public void TestGet(){
-        Integer Id = 2 ;
-        Optional<Sach> optionalSach = repo.findById(Id);
-        System.out.println(optionalSach.get());
-    }
-    @Test
-    public void TestDelete(){
-        Integer Id = 2 ;
-        repo.deleteById(Id);
-}
+//    @Test
+//    public void TestUpdate(){
+//        Integer Id = 1 ;
+//        Optional<Sach> optionalSach = repo.findById(Id);
+//        Sach sach = optionalSach.get();
+//        sach.setTacgia("ABC");
+//        repo.save(sach);
+//    }
+//    @Test
+//    public void TestGet(){
+//        Integer Id = 2 ;
+//        Optional<Sach> optionalSach = repo.findById(Id);
+//        System.out.println(optionalSach.get());
+//    }
+//    @Test
+//    public void TestDelete(){
+//        Integer Id = 2 ;
+//        repo.deleteById(Id);
+//}
 
 }

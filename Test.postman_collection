@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:8080/sach/",
+			"name": "ShowListAll",
 			"event": [
 				{
 					"listen": "test",
@@ -51,7 +51,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/sach/new",
+			"name": "Create new",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -80,7 +80,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/sach/update/8",
+			"name": "Insert",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -110,7 +110,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/sach/delete/8",
+			"name": "Remove",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -131,7 +131,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/sach/get/4",
+			"name": "GetInfo",
 			"request": {
 				"method": "GET",
 				"header": [],

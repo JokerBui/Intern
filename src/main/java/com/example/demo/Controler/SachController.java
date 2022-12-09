@@ -28,15 +28,15 @@ public class SachController {
     }
 
     @PutMapping("/update/{id}")
-    public ResponseEntity<Sach> SachUpdate(@PathVariable Integer id,@RequestBody Sach sach){
+    public ResponseEntity<Sach> SachUpdate(@PathVariable Integer id,@RequestBody Sach sach) throws Exception {
         return ResponseEntity.ok(service.update(id, sach));
     }
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<Sach> SachDelete(@PathVariable Integer id){
+    public ResponseEntity<Sach> SachDelete(@PathVariable Integer id) throws Exception {
         return ResponseEntity.ok(service.delete(id));
     }
     @GetMapping("/get/{id}")
-    public ResponseEntity<Optional<Sach>> SachUpdate(@PathVariable Integer id){
+    public ResponseEntity<Optional<Sach>> SachUpdate(@PathVariable Integer id) throws Exception {
         return ResponseEntity.ok(service.listAllById(id));
     }
 }
